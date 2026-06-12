@@ -344,7 +344,7 @@ button{cursor:pointer;border:none;background:none;font-family:inherit;font-size:
   <div class="sidebar-scroll">
     <div class="nav-group"><div class="nav-items"><div class="nav-item active" data-view="dashboard"><span class="icon">🏠</span>首页</div></div></div>
     <div class="nav-group"><div class="nav-group-title" onclick="toggleGroup(this)">📚 知识库 <span class="arrow">▼</span></div><div class="nav-items"><div class="nav-item sub" data-view="kb-crypto">加密货币基础知识</div><div class="nav-item sub" data-view="kb-exchange">交易所业务知识</div><div class="nav-item sub" data-view="kb-compliance">合规与安全知识</div></div></div>
-    <div class="nav-group"><div class="nav-group-title" onclick="toggleGroup(this)">🔄 流程中心 <span class="arrow">▼</span></div><div class="nav-items"><div class="nav-item sub" data-view="flow-deposit">充提币流程</div><div class="nav-item sub" data-view="flow-kyc">KYC审核流程</div><div class="nav-item sub" data-view="flow-complaint">投诉与升级流程</div><div class="nav-item sub" data-view="flow-exception">异常处理流程</div></div></div>
+    <div class="nav-group"><div class="nav-group-title" onclick="toggleGroup(this)">🔄 流程中心 <span class="arrow">▼</span></div><div class="nav-items"><div class="nav-item sub" data-view="flow-deposit">充提币流程</div><div class="nav-item sub" data-view="flow-kyc">KYC审核流程</div><div class="nav-item sub" data-view="flow-complaint">投诉与升级流程</div><div class="nav-item sub" data-view="flow-exception">
    
   </div>
   <div style="padding:16px 20px;border-top:1px solid rgba(255,255,255,0.06);font-size:11px;color:#6b7280;line-height:1.5">
@@ -367,7 +367,7 @@ button{cursor:pointer;border:none;background:none;font-family:inherit;font-size:
   </div>
   <div class="stat-cards">
     <div class="stat-card"><div class="label">📚 知识库</div><div class="value">3</div><div class="sub">加密货币 / 交易所业务 / 合规安全</div></div>
-    <div class="stat-card"><div class="label">🔄 流程中心</div><div class="value">4</div><div class="sub">充提币 / KYC / 投诉升级 / 异常处理</div></div>
+    <div class="stat-card"><div class="label">🔄 流程中心</div><div class="value">4</div><div class="sub">充提币 / KYC / 投诉升级 </div></div>
   </div>
   <div class="section-title">快速导航</div>
   <div class="quick-grid">
@@ -377,7 +377,7 @@ button{cursor:pointer;border:none;background:none;font-family:inherit;font-size:
     <div class="quick-card" onclick="navigateTo('flow-deposit')"><div class="qc-icon" style="background:#ecfdf5">🔄</div><div class="qc-info"><h4>充提币操作流程</h4><span class="tag">流程</span></div><span class="qc-arrow">→</span></div>
     <div class="quick-card" onclick="navigateTo('flow-kyc')"><div class="qc-icon" style="background:#f0fdf4">🪪</div><div class="qc-info"><h4>KYC审核流程</h4><span class="tag">流程</span></div><span class="qc-arrow">→</span></div>
     <div class="quick-card" onclick="navigateTo('flow-complaint')"><div class="qc-icon" style="background:#fefce8">📣</div><div class="qc-info"><h4>投诉与升级流程</h4><span class="tag">流程</span></div><span class="qc-arrow">→</span></div>
-    <div class="quick-card" onclick="navigateTo('flow-exception')"><div class="qc-icon" style="background:#fef2f2">⚡</div><div class="qc-info"><h4>异常处理流程</h4><span class="tag">流程</span></div><span class="qc-arrow">→</span></div>
+    </div><span class="qc-arrow">→</span></div>
   </div>
   <div class="recommend-cards">
     <div class="recommend-card"><div class="rc-cover" style="background:linear-gradient(90deg,#4f46e5,#7c3aed)"></div><div class="rc-body"><h4>什么是DeFi？概念与风险解读</h4><div class="meta"><span class="tag">知识库</span><span>加密货币基础</span></div><button onclick="navigateTo('kb-crypto')">查看详情</button></div></div>
@@ -389,7 +389,7 @@ button{cursor:pointer;border:none;background:none;font-family:inherit;font-size:
   <div style="margin-top:32px;padding:24px;background:#fff;border-radius:12px;border:1px solid #e8eaef">
     <div style="font-size:15px;font-weight:600;color:#1a1a2e;margin-bottom:12px">📋 关于本知识库</div>
     <div style="font-size:13px;color:#6b7280;line-height:1.8">
-      <p><strong>用途：</strong>本知识库为加密货币交易所客服团队的标准操作参考手册，涵盖加密货币基础知识、交易所业务知识、合规与安全、充提币/KYC/投诉/异常处理全流程。</p>
+      <p><strong>用途：</strong>本知识库为加密货币交易所客服团队的标准操作参考手册，涵盖加密货币基础知识、交易所业务知识、合规与安全、充提币/KYC/投诉全流程。</p>
       </ul>
       <p style="margin-top:12px;font-size:12px;color:#9ca3af">版本 2026.06 · 内容仅供内部培训参考</p>
     </div>
@@ -1470,47 +1470,7 @@ button{cursor:pointer;border:none;background:none;font-family:inherit;font-size:
 【预防】以后充提币时，请务必仔细核对网络选择。<button class="copy-btn" onclick="copyScript(this)">复制</button></div><div class="sd-notes"><div class="note note-danger">🔴 不得承诺一定能找回</div><div class="note note-warn">⚠️ 找回可能需要技术部手动操作</div></div></div></div>
   </div>
 </div>
-
-<!-- ===== Script: Emotion ===== -->
-<div class="view" id="view-script-emotion">
-  <div class="page-header"><h1>情绪与危机话术</h1></div>
-  <div class="dept-grid" style="grid-template-columns:repeat(3,1fr);margin-bottom:20px">
-    <div class="dept-card" style="border-top:4px solid #ef4444"><div class="dc-icon">😤</div><div class="dc-name">愤怒客户</div><div class="dc-desc">服务不满/结果不接受</div></div>
-    <div class="dept-card" style="border-top:4px solid #f59e0b"><div class="dc-icon">😰</div><div class="dc-name">恐慌客户</div><div class="dc-desc">暴跌/被盗/恐慌提币</div></div>
-    <div class="dept-card" style="border-top:4px solid #3b82f6"><div class="dc-icon">😢</div><div class="dc-name">焦虑客户</div><div class="dc-desc">资产安全/等待焦虑</div></div>
-    <div class="dept-card" style="border-top:4px solid #dc2626"><div class="dc-icon">🗣️</div><div class="dc-name">威胁客户</div><div class="dc-desc">投诉/曝光/法律威胁</div></div>
-    <div class="dept-card" style="border-top:4px solid #7c3aed"><div class="dc-icon">📰</div><div class="dc-name">舆情危机</div><div class="dc-desc">社交媒体/媒体介入</div></div>
-    <div class="dept-card" style="border-top:4px solid #1a1a2e"><div class="dc-icon">🏛️</div><div class="dc-name">监管/法律</div><div class="dc-desc">监管调查/法律函件</div></div>
-  </div>
-  <div class="content-block"><h3>😤 愤怒客户 — LEAP法则</h3><div class="step-cards" style="margin-top:12px"><div class="step-card"><div class="sc-title">L — Listen 倾听</div><div class="sc-desc">不打断，让客户发泄完情绪。说："请您慢慢说，我在听。"</div></div><div class="step-card"><div class="sc-title">E — Empathize 共情</div><div class="sc-desc">认可客户感受。说："我完全理解您的心情，换作是我也会很生气。"</div></div><div class="step-card"><div class="sc-title">A — Apologize 道歉</div><div class="sc-desc">真诚道歉。说："非常抱歉给您带来这样的体验。"</div></div><div class="step-card"><div class="sc-title">P — Propose 提议</div><div class="sc-desc">给出解决方案。说："我目前可以为您做的是[方案A]或[方案B]。"</div></div></div><div class="callout callout-danger" style="margin-top:12px">🔴 禁止：不得争吵 | 不得说"这是公司规定" | 不得挂断（人身威胁除外）| 不得承诺超权限补偿</div></div>
-  <div class="content-block"><h3>😰 恐慌客户话术</h3><div style="background:#1a1a2e;color:#e5e7eb;border-radius:8px;padding:16px;font-family:monospace;font-size:12.5px;line-height:1.8;white-space:pre-wrap;margin-top:10px">【安抚】"我理解市场波动让您很不安，这是正常的情绪反应。"
-
-【客观呈现】"目前平台运行正常，资金安全有保障。充提币功能正常开放。"
-
-【避免】❌ 不说"会涨回来的"（投资建议）❌ 不说"不用担心"（轻视情绪）
-
-【引导】"您的资产在平台上是安全的。如果您有操作需求，我可以指导您完成。"</div></div>
-  <div class="content-block" style="margin-top:16px"><h3>🗣️ 威胁客户处理</h3><div class="step-cards"><div class="step-card warn"><div class="sc-title">媒体威胁</div><div class="sc-desc">"我理解您想通过其他渠道解决问题。让我先确认一下，我目前能为您提供的方案是[方案]。如果您仍然不满意，我可以帮您升级到主管处理。"</div></div><div class="step-card danger"><div class="sc-title">法律威胁</div><div class="sc-desc">"我尊重您寻求法律途径的权利。同时，我仍然会尽力在当前渠道帮助您解决问题。这是我们法务部的联系方式[转交法务]。"</div></div><div class="step-card warn"><div class="sc-title">监管举报威胁</div><div class="sc-desc">"您当然有权利向监管机构反映情况。在此期间，我仍会按流程为您处理问题。"</div></div></div><div class="callout callout-danger">🔴 威胁类客户必须即时上报主管。不要因恐惧而做出超权限承诺！</div></div>
-  <div class="content-block" style="margin-top:16px"><h3>📰 舆情危机应对</h3><ul><li>发现社交媒体负面信息→截图保存→即时上报PR部+主管</li><li>不要在社交媒体上回应或解释</li><li>不要向客户确认或否认社交媒体上的信息</li><li>统一口径由PR部发布</li></ul></div>
 </div>
-
-<!-- ===== Cross Department ===== -->
-<div class="view" id="view-cross-dept">
-  <div class="page-header"><h1>跨部门沟通协作</h1></div>
-  <div class="dept-grid">
-    <div class="dept-card" onclick="toggleDept('dept-tech')"><div class="dc-icon">🔧</div><div class="dc-name">技术部</div><div class="dc-desc">系统故障 · 链上问题</div></div>
-    <div class="dept-card" onclick="toggleDept('dept-compliance')"><div class="dc-icon">⚖️</div><div class="dc-name">合规部</div><div class="dc-desc">KYC争议 · AML</div></div>
-    <div class="dept-card" onclick="toggleDept('dept-biz')"><div class="dc-icon">💼</div><div class="dc-name">商务部</div><div class="dc-desc">VIP客户 · 返佣</div></div>
-    <div class="dept-card" onclick="toggleDept('dept-ops')"><div class="dc-icon">📢</div><div class="dc-name">运营部</div><div class="dc-desc">活动规则 · 公告</div></div>
-    <div class="dept-card" onclick="toggleDept('dept-finance')"><div class="dc-icon">💰</div><div class="dc-name">财务部</div><div class="dc-desc">退款 · 补偿审批</div></div>
-    <div class="dept-card" onclick="toggleDept('dept-pr')"><div class="dc-icon">📰</div><div class="dc-name">PR部</div><div class="dc-desc">媒体 · 舆情</div></div>
-    <div class="dept-card" onclick="toggleDept('dept-legal')"><div class="dc-icon">🏛️</div><div class="dc-name">法务部</div><div class="dc-desc">法律威胁 · 监管</div></div>
-    <div class="dept-card" onclick="toggleDept('dept-security')"><div class="dc-icon">🛡️</div><div class="dc-name">安全部</div><div class="dc-desc">被盗 · 风控</div></div>
-  </div>
-  <div class="dept-detail" id="dept-tech"><div class="dd-header"><span class="dd-icon">🔧</span><span class="dd-title">技术部</span></div><div class="dd-body"><div class="dd-section"><h4>📋 职责范围</h4><p>系统故障排查、链上问题处理、数据修复、API异常</p></div><div class="dd-section"><h4>🎯 对接场景</h4><ul><li>充提币异常</li><li>交易故障</li><li>数据不一致</li><li>系统Bug</li></ul></div><div class="dd-section"><h4>📞 联系方式</h4><div class="dd-contact"><div class="dd-contact-item"><div class="label">工单系统</div><div class="value">技术工单</div></div><div class="dd-contact-item"><div class="label">紧急群</div><div class="value">Tech-Emergency</div></div><div class="dd-contact-item"><div class="label">on-call</div><div class="value">紧急电话</div></div></div></div><div class="dd-section"><h4>⏱ 响应时效</h4><p>紧急15min / 一般4h / 低优24h</p></div><div class="dd-section"><h4>📌 沟通规范</h4><p>需提供：UID + 问题描述 + 复现步骤 + 截图</p></div><div class="callout callout-danger" style="margin-top:8px">🔴 不直接找开发个人 / 不在非紧急时打电话</div></div></div>
-  <div class="dept-detail" id="dept-compliance"><div class="dd-header"><span class="dd-icon">⚖️</span><span class="dd-title">合规部</span></div><div class="dd-body"><div class="dd-section"><h4>📋 职责范围</h4><p>KYC审核争议、AML相关、可疑交易上报、监管配合</p></div><div class="dd-section"><h4>🎯 对接场景</h4><ul><li>KYC拒绝申诉</li><li>可疑账户</li><li>制裁名单命中</li><li>司法协助</li></ul></div><div class="dd-section"><h4>📞 联系方式</h4><div class="dd-contact"><div class="dd-contact-item"><div class="label">合规工单</div><div class="value">Compliance</div></div><div class="dd-contact-item"><div class="label">合规邮箱</div><div class="value">compliance@</div></div></div></div><div class="dd-section"><h4>⏱ 响应时效</h4><p>合规咨询24h / 紧急合规4h</p></div><div class="callout callout-danger" style="margin-top:8px">🔴 必须书面留痕 / 不口头讨论合规细节 / 不向客户透露合规判断逻辑</div></div></div>
-  <div class="dept-detail" id="dept-security"><div class="dd-header"><span class="dd-icon">🛡️</span><span class="dd-title">安全部</span></div><div class="dd-body"><div class="dd-section"><h4>📋 职责范围</h4><p>账户安全、风控系统、入侵检测、安全审计</p></div><div class="dd-section"><h4>🎯 对接场景</h4><ul><li>账户被盗</li><li>异常登录</li><li>安全事件</li><li>风控误判</li></ul></div><div class="dd-section"><h4>⏱ 响应时效</h4><p>安全事件即时 / 风控查询4h</p></div><div class="callout callout-danger" style="margin-top:8px">🔴 不透露安全机制细节 / 不讨论风控规则</div></div></div>
-  <div class="exception-table" style="margin-top:16px"><h3>常见跨部门场景速查</h3><table class="exc-table"><thead><tr><th>客户问题</th><th>涉及部门</th><th>客服先行操作</th></tr></thead><tbody><tr><td>充币24h未到账</td><td>技术+财务</td><td>收集TxHash+确认数</td></tr><tr><td>KYC被拒要申诉</td><td>合规</td><td>收集客户补充材料</td></tr><tr><td>VIP客户要求特殊费率</td><td>商务</td><td>记录客户诉求转交</td></tr><tr><td><span class="tag-sm tag-red">紧急</span> 威胁联系媒体</td><td>PR+法务</td><td>安抚+记录+即时上报</td></tr><tr><td><span class="tag-sm tag-red">紧急</span> 疑似账户被盗</td><td>安全</td><td>冻结账户+改密引导</td></tr><tr><td>活动奖励未到账</td><td>运营+财务</td><td>确认活动规则+参与记录</td></tr></tbody></table></div>
 </div>
 
 </div><!-- end content -->
@@ -1525,7 +1485,7 @@ function navigateTo(viewId){
   if(target)target.classList.add('active');
   const navItem=document.querySelector(`.nav-item[data-view="${viewId}"]`);
   if(navItem)navItem.classList.add('active');
-  const names={'dashboard':'总览','kb-crypto':'知识库 > 加密货币基础知识','kb-exchange':'知识库 > 交易所业务知识','kb-compliance':'知识库 > 合规与安全知识','flow-deposit':'流程中心 > 充提币流程','flow-kyc':'流程中心 > KYC审核流程','flow-complaint':'流程中心 > 投诉与升级流程','flow-exception':'流程中心 > 异常处理流程','script-faq':'话术模板 > 常见问题话术库','script-emotion':'话术模板 > 情绪与危机话术','cross-dept':'跨部门沟通协作'};
+  const names={'dashboard':'总览','kb-crypto':'知识库 > 加密货币基础知识','kb-exchange':'知识库 > 交易所业务知识','kb-compliance':'知识库 > 合规与安全知识','flow-deposit':'流程中心 > 充提币流程','flow-kyc':'流程中心 > KYC审核流程','flow-complaint':'流程中心 > 投诉与升级流程','flow-exception':
   const bc=document.getElementById('breadcrumb');
   const parts=(names[viewId]||viewId).split(' > ');
   bc.innerHTML=parts.map((p,i)=>i<parts.length-1?`<span>${p}</span><span class="sep">›</span>`:`<span class="current">${p}</span>`).join('');
